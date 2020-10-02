@@ -1,0 +1,65 @@
+.grid{
+	display: grid;
+	/* se crean dos columnas en una misma fila 
+	cada una con el 50% */
+	/* en caso de que queramos 3 columnas 
+	seria = 100 /3 entonces cada uno seria de
+	33%... tambien sirve para darle el ancho de cada columna
+	por ejemplo 
+	200px 300px 400px
+	grid-template-columns: ;*/
+	
+
+	/* con grid template rows lo que hacemos es el tamaño de las filas
+	en orden : a b (n..) donde a es la primera fila
+	b la segunda y n la cantidad que querramos 
+	, si queremos que el texto de adentro se ajuste entonces le decimos
+	auto auto (auto(n) donde n es la cantidad de columnas grid-template-rows:; ;*/
+	
+	/* espaciado entre columnas y filas gap: ;*/
+	
+	/* espaciado solo para columnas  ejemplo colum-gap ;*/
+	
+	/* espaciado solo para filas  ejemplo row-gap ;*/
+	
+	/* existe una unidad llamada fraccion fr
+	el cual divide el ancho en la cantidad de columnas que deseemos
+	ejemplo
+	grid-template-columns: 1fr 2fr 3fr (nfr);
+	divide la pantalla en pequeñas fracciones*/
+	/* con repeat podemos repetear caracteristicas y recibe 2 parametros
+	ejemplo
+	repeat(cantidad de veces a repetir , que se va a repetir );*/
+	/* para establecer un valor minimo y un valor maximo de las filas 
+	grid-template-rows:minmax(min,max);*/
+	grid-template-columns: repeat(5,1fr);
+	grid-gap: 1em;
+	grid-auto-rows:minmax(100px,auto);
+	
+}
+.grid >div{
+	background: #ecf0f1;
+	padding: 1em;
+}
+
+.grid >div:hover{
+	border:1px solid #f1c40f;
+}
+
+.Registro{
+	background-color:#A19DFB;
+	padding:3em;
+	margin: 3em;
+}
+
+#parrafo{
+	height: 50px;
+	width: 1200px;
+}
+.grid{
+	margin: 0.5em;
+	padding: 0.5em;
+	background: #1FAFB6;
+}
+
+
